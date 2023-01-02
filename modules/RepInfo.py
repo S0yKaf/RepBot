@@ -26,7 +26,6 @@ class RepInfo():
 ```yaml
 Rank: {config.RANKS[user.rank][1]}
 Reputation: {user.rep}
-Discount: {config.RANKS[user.rank][2]}%
 
 ```
 """
