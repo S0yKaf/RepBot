@@ -1,0 +1,14 @@
+CSV_FILE = "rep_data.csv"
+BOT_KEY = "YOUR BOT KEY"
+ALLOWED_ROLES = ["Weeb"] # Roles allowed to interact with the bot
+
+# Ranks are
+# Rep required
+# Rank Name
+# Discount awarded (in percent)
+RANKS = [
+    [0, "First Timer", 0],
+    [1, "Customer", 0],
+    [5, "Good Customer", 15],
+    [10, "Big Shot", 30]
+]
