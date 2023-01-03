@@ -6,6 +6,7 @@ ALLOWED_ROLES = ["Weeb"] # Roles allowed to interact with the bot
 # Rep required
 # Rank Name
 # Discount awarded (in percent)
+#
 RANKS = [
     [0, "First Timer", 0],
     [1, "Customer", 0],
