@@ -8,11 +8,13 @@ class User():
     name = ""
     rep = 0
     rank = 0
+    display_name = ""
     storage = []
 
-    def __init__(self, name, rep=0):
+    def __init__(self, name, display_name="", rep=0):
         self.name = name
         self.rep = rep
+        self.display_name = display_name
 
         self._setup()
 
@@ -34,7 +36,8 @@ class User():
     def get_data(self):
         return [self.name,
                 self.rep,
-                self.rank]
+                self.rank,
+                self.display_name]
 
 
     def update_rank(self):
