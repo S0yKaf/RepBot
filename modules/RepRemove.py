@@ -35,7 +35,7 @@ class RepRemove():
 
         user = match.group(1)
         rep = match.group(2) or 1
-        u = User(user, message.mentions.pop())
+        u = User(user, message.mentions.pop().name)
         amount = u.remove_rep(rep)
         #await client.get_channel(message.channel.id).send(f"<{user}> has lost {amount} rep! :(")
         updated = await update_rank(u, message.guild, client)

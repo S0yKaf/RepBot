@@ -34,7 +34,7 @@ class RepAdd():
 
         user = match.group(1)
         rep = match.group(2) or 1
-        u = User(user, message.mentions.pop())
+        u = User(user, message.mentions.pop().name)
         amount = u.add_rep(rep)
         #await client.get_channel(message.channel.id).send(f"<{user}> has gained +{amount} rep!")
         updated = await update_rank(u, message.guild, client)

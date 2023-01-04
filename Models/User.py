@@ -37,7 +37,7 @@ class User():
         return [self.name,
                 self.rep,
                 self.rank,
-                self.display_name]
+                self.display_name.encode("utf-8")]
 
 
     def update_rank(self):
